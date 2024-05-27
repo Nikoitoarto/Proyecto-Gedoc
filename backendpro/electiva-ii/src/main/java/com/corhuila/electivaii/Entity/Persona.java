@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 
 @Entity
+@Table(name = "persona")
 public class Persona extends  ABaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.util.Set;
 
 @Entity
+@Table(name = "modulo")
 public class Modulo extends  ABaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

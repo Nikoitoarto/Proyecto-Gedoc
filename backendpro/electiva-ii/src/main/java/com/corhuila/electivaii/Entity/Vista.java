@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.util.Set;
 
 @Entity
+@Table(name = "vista")
 public class Vista extends  ABaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,7 +16,7 @@ public class Vista extends  ABaseEntity {
     @Column(nullable = false)
     private String ruta;
 
-    @ManyToMany(mappedBy = "vistas")
+    @ManyToMany(mappedBy = "vista")
     private Set<Modulo> modulos;
 
     public Long getId() {

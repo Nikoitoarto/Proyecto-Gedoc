@@ -6,6 +6,7 @@ import java.util.Set;
 
 
 @Entity
+@Table(name = "usuario")
 public class Usuario extends  ABaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

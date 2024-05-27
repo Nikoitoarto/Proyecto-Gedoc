@@ -6,6 +6,7 @@ import java.util.Set;
 
 
 @Entity
+@Table(name = "rol")
 public class Rol extends  ABaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
